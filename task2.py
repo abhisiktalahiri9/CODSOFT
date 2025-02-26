@@ -6,7 +6,6 @@ print("3. Multiply")
 print("4. Divide")
 
 option = int(input("Choose an operation: "))
-result = 0
 
 if(option in [1,2,3,4]):
     n1 = float(input("Enter first number: "))
