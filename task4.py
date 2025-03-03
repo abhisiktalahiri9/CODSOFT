@@ -23,7 +23,7 @@ def play_game():
         user_choice = input("Enter rock, paper, or scissors (or 'quit' to stop playing): \n ").lower()
         
         if user_choice == "quit":
-            print(f"Final Scores: You - {user_score}, Computer - {computer_score}")
+            print(f"Final Scores: You : {user_score}, Computer : {computer_score}")
             print("Thanks for playing!")
             break
         
@@ -42,10 +42,10 @@ def play_game():
         elif result == "You lose!":
             computer_score += 1
         
-        print(f"Score: You - {user_score}, Computer - {computer_score}")
-        play_again = input("Do you want to play again? Type 'y' for 'yes' and 'n' for 'no'.\n ").lower()
+        print(f"Score: You : {user_score}, Computer : {computer_score}")
+        play_again = input("Do you want to play again? Type 'y' for 'yes' and 'n' for 'no':  ").lower()
         if play_again != "y":
-            print(f"Your score: {user_score} , Computer's score: {computer_score}")
+            print(f"Final Scores: You : {user_score}, Computer : {computer_score}")
             break
 
 play_game()
